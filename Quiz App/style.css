@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,100;1,500&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to top,rgb(154, 243, 255),rgb(0, 57, 64));
+    color: whitesmoke;
+}
+.container{
+    width: 80%;
+    max-width: 850px;
+    /* font-size: 25px; */
+    text-align: center;
+    display: none;
+
+}
+.container h1{
+    font-size: 45px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-underline-offset: 18px;
+}
+.container .question{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.container .choises{
+    font-size: 25px;
+}
+.choice{
+    margin-top: 20px;
+    line-height: 1.5;
+    background-color: rgb(31, 144, 164);
+    margin: 10px auto;
+    border: 2px solid rgb(3, 96, 112);
+    padding: 7px;
+    padding-left: 13px;
+    text-align: left;
+    border-radius: 13px;
+    width: 60%;
+    cursor: pointer;
+}
+.choice:hover{
+    background-color: rgb(0, 103, 121);
+    border: 2px solid rgb(1, 51, 60);
+}
+.btn{
+    width: 30%;
+    font-size: 25px;
+    margin-top: 25px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: rgb(2, 153, 78);
+    color: aliceblue;
+    border: 2px solid green;
+    cursor: pointer;
+    text-align: center;
+}
+.btn:hover{
+    background-color: rgb(0, 105, 52);
+    border: 2px solid rgb(0, 59, 30);
+}
+.choises .selected{
+    background-color: rgb(0, 157, 84);
+    color: black;
+}
+
+.scoreCard{
+    font-size: 30px;
+    color: aqua;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.alert{
+    background-color: aquamarine;
+    width: 100%;
+    padding: 13px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    display: none;
+    color: black;
+}
+
+.startbtn{
+    width: 60%;
+    display: grid;
+    place-items: center;
+}
+.timer{
+    width: 74px;
+    height: 74px;
+    background-color: rgb(1, 53, 61);
+    border: 2px solid red;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: x-large;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 8px 1px red, -1px -1px 8px 1px red;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+        max-width: 850px;
+    }    
+    .container h1{
+        font-size: 27px;
+        margin-bottom: 20px;
+        text-underline-offset: 9px;
+    }
+    .container .question{
+        font-size: 19px;
+        margin-top: 10px;
+    }
+    .container .choises{
+        font-size: 16px;
+    }
+    .choice{
+        width: 80%;
+    }
+    .btn{
+        width: 80%;
+        font-size: 17px;
+        margin-top: 13px;
+        padding: 2.5px 13px;
+        border-radius: 3px;
+    }
+    .scoreCard{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}
